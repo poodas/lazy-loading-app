@@ -7,7 +7,6 @@ import { AppComponent } from "./app.component";
 //Prime classes
 import { ButtonModule } from "primeng/button";
 import { RouterModule } from "@angular/router";
-import { HomeModModule } from "./home-mod/home-mod.module";
 
 @NgModule({
   declarations: [AppComponent],

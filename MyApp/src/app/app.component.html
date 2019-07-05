@@ -1,4 +1,4 @@
-<button
+<!-- <button
   pButton
   type="button"
   label="Home"
@@ -14,5 +14,33 @@
   [routerLink]="['/dialog']"
 ></button>
 
-<button pButton type="button" label="Data" [routerLink]="['/data']"></button>
+<button pButton type="button" label="Data" [routerLink]="['/data']"></button> -->
+
+<div class="login-wrapper">
+  <div class="ui-g-12 ui-md-8">
+    <div class="ui-inputgroup">
+      <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+      <input type="text" pInputText placeholder="Username" />
+    </div>
+  </div>
+
+  <div class="ui-g-12 ui-md-12">
+    <div class="ui-inputgroup">
+      <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+      <input type="text" pInputText placeholder="Enter Password" />
+    </div>
+  </div>
+
+  <div class="ui-md-2">
+    <button
+      class=""
+      pButton
+      type="button"
+      label="Login"
+      style="margin-right: 20px;"
+      [routerLink]="['/dialog']"
+    ></button>
+  </div>
+</div>
+
 <router-outlet></router-outlet>

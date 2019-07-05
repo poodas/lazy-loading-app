@@ -1,3 +1,14 @@
-<p>
-  dialog works!
-</p>
+<div *ngFor="let checkbox of checkboxCollection">
+  <p-checkbox
+    [label]="checkbox.label"
+    name="groupname"
+    [(ngModel)]="checkbox.state"
+    binary="true"
+    (onChange)="checkboxChangeDetection($event)"
+  ></p-checkbox>
+</div>
+<select (change)="dropDownChangeDetection($event)">
+  <option *ngFor="let city of cities" [value]="city.value" #drp
+    >{{ city.label }}
+  </option>
+</select>
